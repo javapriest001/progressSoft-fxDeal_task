@@ -19,15 +19,18 @@ The project is organized into several packages:
 6. controller: Contains the controller class housing the endpoints
 7. service: Contains the service interface and implementation class.
 
-# Accessing The ApplicationAccess the application:
+# Access the application:
 
-  The application will be available at http://localhost:5000.
+  The application will be available at http://localhost:(--port).
   
   1.Import FX deals:
 
-  Send POST requests to http://localhost:5000/api/deals/fxDeals with valid JSON data containing the FX deal details. The API will return a response with the created FX deal   details.
+  Send POST requests to http://localhost:(--port)/api/deals/fxDeals with valid JSON data containing the FX deal details. The API will return a response with the created FX deal   details.
   
 2.Retrieve FX deals:
 
-  Send GET requests to http://localhost:5000/api/getAllFxDeals to get a list of all stored FX deals.
-  Send GET requests to http://localhost:5000/api/fxDeals/{id} to retrieve an individual FX deal by its ID.
+  Send GET requests to http://localhost:(--port)/api/getAllFxDeals to get a list of all stored FX deals.
+  Send GET requests to http://localhost:(--port)/api/fxDeals/{id} to retrieve an individual FX deal by its ID.
+
+# Contributing
+We welcome contributions to the FX Deals Data Warehouse project. If you have any ideas, bug fixes, or enhancements, please submit a pull request.
