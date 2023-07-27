@@ -22,10 +22,11 @@ The project is organized into several packages:
 # Accessing The ApplicationAccess the application:
 
   The application will be available at http://localhost:5000.
-  -Import FX deals:
+  1.Import FX deals:
 
-Send POST requests to http://localhost:5000/api/deals/fxDeals with valid JSON data containing the FX deal details. The API will return a response with the created FX deal details.
-Retrieve FX deals:
+  Send POST requests to http://localhost:5000/api/deals/fxDeals with valid JSON data containing the FX deal details. The API will return a response with the created FX deal   details.
+  
+2.Retrieve FX deals:
 
-Send GET requests to http://localhost:8080/api/getAllFxDeals to get a list of all stored FX deals.
-Send GET requests to http://localhost:8080/api/fxDeals/{id} to retrieve an individual FX deal by its ID.
+  Send GET requests to http://localhost:5000/api/getAllFxDeals to get a list of all stored FX deals.
+  Send GET requests to http://localhost:5000/api/fxDeals/{id} to retrieve an individual FX deal by its ID.
