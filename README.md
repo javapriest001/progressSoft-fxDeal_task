@@ -1,36 +1,73 @@
-# progressSoft-fxDeal_task
-This project aims to develop a data warehouse for Bloomberg to analyze Foreign Exchange (FX) deals. The system will accept FX deal details, validate the data, persist it into a database, and provide the necessary functionality to retrieve and analyze the FX deals.
+# progressSoft - ClusteredData - Warehouse
 
-# Technologies
-1. Java
-2. Springboot
-3. maven
-4. docker
-5. mysql
+### Introduction
 
-# Project Structure
-The project is organized into several packages:
+Develop data warehouse for Bloomberg to analyze FX deals
 
-1. model: Contains the data model for FX deals (FxDeal).
-2. dto: Contains the dto data model for FX deals (FxDealOrderDTO)
-3. repository: Contains the FxDealRepository.
-4. utils: Contains the utility class for mapping and validation.
-5. exception: Contains the custom exception handling class.
-6. controller: Contains the controller class housing the endpoints
-7. service: Contains the service interface and implementation class.
+---
 
-# Access the application:
+### Task description
 
-  The application will be available at http://localhost:(--port).
-  
-  1.Import FX deals:
+One of customer stories is to accept deals details from and persist them into DB.
 
-  Send POST requests to http://localhost:(--port)/api/deals/fxDeals with valid JSON data containing the FX deal details. The API will return a response with the created FX deal   details.
-  
-2.Retrieve FX deals:
 
-  Send GET requests to http://localhost:(--port)/api/getAllFxDeals to get a list of all stored FX deals.
-  Send GET requests to http://localhost:(--port)/api/fxDeals/{id} to retrieve an individual FX deal by its ID.
+### Technologies
+
+- Java
+- Maven
+- PostgreSQL
+- Spring Boot
+- Spring Data JPA
+
+### Requirements
+
+You need the following to build and run the application:
+
+- [JDK 17](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- [Maven 3.8.6](https://maven.apache.org) (This is the build tool used.)
+
+
+## How to run Application(s)
+### step 1 - clone project with Terminal from [here](https://github.com/TryG70/ClusteredData-Warehouse)
+
+```
+git clone git@github.com:TryG70/ClusteredData-Warehouse.git
+```
+
+### step 2 - move into the project directory
+```
+cd clusteredData-warehouse/
+```
+
+### step 3 - Open the clusteredData-wareHouse Folder in an IDE, As a maven Project.
+ 
+```
+mvn spring-boot:run
+```
+
+
+### step 6 - Generate the .jar files with Terminal
+
+```
+mvn clean install 
+```
+OR
+```
+./mvnw clean install
+```
+
+
+## PostMan Collection for Integration Tests.
+- clusteredDataWarehouse [here](https://api.postman.com/collections/20569888-227bc66d-5542-44ac-bee5-f7ccbbb3550c?access_key=PMAT-01H6BHMAV9S6D8K2V15MNSANMK)
+
+
+## Running The Tests with Maven
+
+To run the tests with maven, you would need to run the maven command for testing, after the code has been compiled.
+```
+mvn <option> test
+```
+
 
 # Contributing
 We welcome contributions to the FX Deals Data Warehouse project. If you have any ideas, bug fixes, or enhancements, please submit a pull request.
