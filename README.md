@@ -15,7 +15,7 @@ One of customer stories is to accept deals details from and persist them into DB
 
 - Java
 - Maven
-- PostgreSQL
+- MySQL
 - Spring Boot
 - Spring Data JPA
 
@@ -28,10 +28,10 @@ You need the following to build and run the application:
 
 
 ## How to run Application(s)
-### step 1 - clone project with Terminal from [here](https://github.com/TryG70/ClusteredData-Warehouse)
+### step 1 - clone project with Terminal from [here](https://github.com/johnDevALX/progressSoft-fxDeal_task)
 
 ```
-git clone git@github.com:TryG70/ClusteredData-Warehouse.git
+git clone git@github.com:johnDevALX/progressSoft-fxDeal_task.git
 ```
 
 ### step 2 - move into the project directory
