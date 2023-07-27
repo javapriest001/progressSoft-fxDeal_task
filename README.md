@@ -11,18 +11,18 @@ This project aims to develop a data warehouse for Bloomberg to analyze Foreign E
 # Project Structure
 The project is organized into several packages:
 
-model: Contains the data model for FX deals (FxDeal).
-dto: Contains the dto data model for FX deals (FxDealOrderDTO)
-repository: Contains the FxDealRepository.
-utils: Contains the utility class for mapping and validation.
-exception: Contains the custom exception handling class.
-controller: Contains the controller class housing the endpoints
-service: Contains the service interface and implementation class.
+1. model: Contains the data model for FX deals (FxDeal).
+2. dto: Contains the dto data model for FX deals (FxDealOrderDTO)
+3. repository: Contains the FxDealRepository.
+4. utils: Contains the utility class for mapping and validation.
+5. exception: Contains the custom exception handling class.
+6. controller: Contains the controller class housing the endpoints
+7. service: Contains the service interface and implementation class.
 
 # Accessing The ApplicationAccess the application:
 
-The application will be available at http://localhost:5000.
-Import FX deals:
+  The application will be available at http://localhost:5000.
+  -Import FX deals:
 
 Send POST requests to http://localhost:5000/api/deals/fxDeals with valid JSON data containing the FX deal details. The API will return a response with the created FX deal details.
 Retrieve FX deals:
